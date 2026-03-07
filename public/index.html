@@ -1,0 +1,32 @@
+html<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>e-Soins</title>
+    <style>body { margin: 0; background: #0f1923; }</style>
+  </head>
+  <body>
+    <noscript>Activez JavaScript pour utiliser e-Soins.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+**4.** Cliquez **"Commit changes"** → **"Commit changes"**
+
+---
+
+## Étape 2 — Créer `src/index.js`
+
+**1.** **"Add file"** → **"Create new file"**
+
+**2.** Nom :
+```
+src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<React.StrictMode><App /></React.StrictMode>);
